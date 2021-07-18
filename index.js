@@ -25,4 +25,19 @@ function calcMult (num1, num2) {
 }
 console.log (calcMult(3, 3));
 5
+function calcRemainder (num1, num2){
+    if (num1 % num2 === 0) {
+    return true;
+    }
+    else {
+        return false
+    }
+}
 
+console.log (calcRemainder(3, 4));
+6
+function calcPow (num1, num2) {
+    return Math.pow (num1, num2)
+}
+console.log (calcPow(2, 3));
+7
