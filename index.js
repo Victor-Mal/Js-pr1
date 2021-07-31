@@ -160,6 +160,10 @@ console.log (calcMultLoop(3, 6));
 //5*.считает факториал числа num (циклом)
 
 function calcFactorial (num) {
+    
+    if (isNaN(num)) {
+        return false;
+    }
     let buffer = 1;
 
     for (let i = 1; i <= num; i++) {
@@ -175,6 +179,9 @@ console.log(calcFactorial(5));
 
 function calcPowLoop (val, power) {
     
+    if (isNaN(val) || isNaN(power)) {
+        return false;
+    }
     let buffer = 1;
 
     for (let i = 0; i < power; i++) {
