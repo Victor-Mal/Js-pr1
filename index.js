@@ -63,7 +63,10 @@ function calcPow (num1, num2) {
 console.log (calcPow(2, 3));
 
 //7.принимает числа, количество параметров (зависит от выбранной фигуры), возвращает площадь выбранной вами фигуры (на выбор: треуг, конус, трапеция, паралелепипед, круг, шар, цилиндр).
-
+/**
+ * Function that calculates sphere area on radius
+ * @param {Number} num Radius of sphere
+ */
 function calcSphereArea (num) {
     
     if (isNaN(num)) {
@@ -75,7 +78,12 @@ function calcSphereArea (num) {
 console.log (calcSphereArea (3));
 
 //8.*принимает два числа, и оператор строкой (+, -, *, /). Считает нужную операцию (switch) и возвращает результат.
-
+/**
+ * Simple calculator function
+ * @param {Number} num1 The first number of the operation
+ * @param {Symbol} symbol Mathematical symbol
+ * @param {Number} num2 The second number of the operation
+ */
 function calcNumber (num1, symbol, num2) {
 
     if (isNaN(num1) || isNaN(num2)) {
@@ -101,7 +109,7 @@ function calcNumber (num1, symbol, num2) {
     }        
 }
 console.log (calcNumber("4", '*', 2))
-
+console.log('************************************************************');
 //Loops
 
 //1.функция выводит в консоль строку "Hello loop", 5 раз.
